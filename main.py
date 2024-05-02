@@ -85,6 +85,7 @@ if __name__ == '__main__':
     os.makedirs(dst, exist_ok=True)
     move_shallow_files(root, dst)
 
+
     folders_list = get_folders_list(root)
     folders_list = [i for i in folders_list if os.path.abspath(dst) != os.path.abspath(i)]
     folders_list = [i for i in folders_list if folder_containst_models(i)]
