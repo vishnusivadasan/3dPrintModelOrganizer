@@ -13,7 +13,6 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
 
 
-import glob
 
 
 def get_stl_3mf_files_deep(folder_path):
@@ -78,6 +77,7 @@ def move_shallow_files(root, dst):
     for file in stl_3mf_files_list_shallow:
         move_file(file, dst)
         print(f"moved {file}")
+
 
 if __name__ == '__main__':
     root = '/Users/vishnusivadasan/Downloads'
